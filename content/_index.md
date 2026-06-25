@@ -2,7 +2,24 @@
 title: "Our Services"
 description: "Professional consulting services"
 date: "2026-05-12T13:14:47-05:00"
+showHeader: false
 ---
+
+{{< columns count=2 >}}
+
+{{< column >}}
+# Secure Technology Solutions
+{{< intro >}}
+Global Commerce & Services, LLC is an Information Technology company focused in the areas of IT Solutions and Systems Engineering, Cybersecurity, Local Area Network/Wide Area Network (LAN/WAN) Development and Support, and Program/Project Management.
+{{< /intro >}}
+{{< /column >}}
+
+{{< column >}}
+{{< spacer >}}
+{{< img src="/img/placeholder.svg" loading="eager" >}}
+{{< /column >}}
+
+{{< /columns >}}
 
 Global Commerce & Services, LLC (GCS) is an Information Technology company founded in 2000. The company has provided services in the areas of IT Solutions and Systems Engineering, Cybersecurity, Local Area Network/Wide Area Network (LAN/WAN) Development and Support, and Program/Project Management.
 

@@ -14,4 +14,4 @@ https://github.com/opera7133/tella
 
 Dependencies:
 - node.js
-- dart sass
+- dart-sass
