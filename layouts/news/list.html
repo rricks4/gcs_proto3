@@ -2,7 +2,9 @@
   {{ .Content }}
   {{ $paginator := .Paginate .Pages }}
   {{- range $paginator.Pages }}
+      {{ $thumbnail := .Params.image | default "gcs_logo/logo.png" | relURL }}
       <article class="blog-item">
+        <img src="{{ $thumbnail }}" alt="{{ .Title | plainify | safeHTMLAttr }} thumbnail"/>
         <h2 class="blog-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{- partial "blog/byline.html" . }}
         <p class="blog-item__summary">{{ .Summary | plainify }}</p>

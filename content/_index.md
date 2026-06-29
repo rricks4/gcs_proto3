@@ -16,7 +16,7 @@ Global Commerce & Services, LLC is an Information Technology company focused in 
 
 {{< column >}}
 {{< spacer >}}
-{{< img src="/img/placeholder.svg" loading="eager" >}}
+{{< img src="headers/ezgif-19325b041f7da5d6.gif" loading="eager" >}}
 {{< /column >}}
 
 {{< /columns >}}

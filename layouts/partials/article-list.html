@@ -1,6 +1,14 @@
 {{ range .Pages }}
+    {{ $src := .Params.image | default "gcs_logo/logo.png" }}
     <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Summary | plainify }}</p>
+        <img src="{{ $src }}"/>
+        <h2>
+            <a href="{{ .Permalink }}">
+                {{ .Title }}
+            </a>
+        </h2>
+        <p>
+            {{ .Summary | plainify }}
+        </p>
     </article>
 {{ end }}

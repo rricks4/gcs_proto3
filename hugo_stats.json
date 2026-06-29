@@ -35,12 +35,19 @@
       "ul"
     ],
     "classes": [
+      "blog-item",
+      "blog-item__byline",
+      "blog-item__date",
+      "blog-item__summary",
+      "blog-item__title",
       "breadcrumb",
       "breadcrumbs",
       "breadcrumbs-list",
       "button",
       "categories",
       "column",
+      "columns",
+      "columns-2",
       "container",
       "content",
       "contract-vehicles",
@@ -56,6 +63,7 @@
       "hamburger-box",
       "hamburger-inner",
       "header",
+      "intro",
       "logo",
       "logo-link",
       "main-menu",
@@ -77,6 +85,7 @@
       "page-taxonomy",
       "skip-link",
       "social-links",
+      "spacer-50",
       "sticky",
       "tags",
       "tertiary",
@@ -96,7 +105,8 @@
       "our-leadership",
       "primary-naics-codes",
       "program--project-management",
-      "quality-security-and-delivery-standards"
+      "quality-security-and-delivery-standards",
+      "secure-technology-solutions"
     ]
   }
 }
