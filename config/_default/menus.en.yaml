@@ -16,8 +16,18 @@ main:
     weight: 5
 
   - name: "About"
+    identifier: "about"
+    weight: 10    
+
+  - name: "Who We Are"
     pageRef: "about"
-    weight: 10
+    weight: 12
+    parent: "about"
+
+  - name: "Awards"
+    pageRef: "awards"
+    weight: 15
+    parent: "about"
 
   - name: "News"
     pageRef: "news"

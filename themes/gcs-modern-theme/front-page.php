@@ -1,28 +1,14 @@
-{{ define "main" }}
-{{ $hero := dict
-  "eyebrow" "Federal IT & Professional Services"
-  "headline" "Mission-Critical IT Services for Government"
-  "subheadline" "GCS delivers secure IT, cybersecurity, software engineering, cloud, and mission support services to defense and civilian agencies across the federal government."
-}}
-{{ $vehicles := slice "OASIS+" "GSA MAS" "SeaPort NxG" "SEWP VI" "MDA SHIELD" }}
-{{ $capabilities := slice
-  (dict "title" "Cybersecurity" "text" "CMMC, RMF, compliance, vulnerability management, and secure operations.")
-  (dict "title" "Cloud & Infrastructure" "text" "Enterprise systems administration, cloud, hybrid infrastructure, and service operations.")
-  (dict "title" "Software & Data" "text" "Application support, databases, automation, Power Platform, and data-driven solutions.")
-  (dict "title" "Program Management" "text" "Disciplined program execution, governance, quality, staffing, and reporting.")
-  (dict "title" "Mission Support" "text" "Administrative, operational, logistics, and professional services supporting federal missions.")
-  (dict "title" "Engineering Services" "text" "Technical engineering, lifecycle support, documentation, analysis, and modernization.")
-}}
+<?php get_header(); ?>
 <main>
   <section class="hero">
     <div class="container hero-inner">
       <div>
-        <div class="eyebrow">{{ $hero.eyebrow }}</div>
-        <h1>{{ $hero.headline }}</h1>
-        <p>{{ $hero.subheadline }}</p>
+        <div class="eyebrow"><?php echo esc_html(gcs_get('hero_eyebrow','Federal IT & Professional Services')); ?></div>
+        <h1><?php echo esc_html(gcs_get('hero_headline','Mission-Critical IT Services for Government')); ?></h1>
+        <p><?php echo esc_html(gcs_get('hero_subheadline','GCS delivers secure IT, cybersecurity, software engineering, cloud, and mission support services to defense and civilian agencies across the federal government.')); ?></p>
         <div class="button-row">
-          <button class="btn btn-primary" type="button">Explore Services</button>
-          <button class="btn btn-secondary" type="button">Contract Vehicles</button>
+          <a class="btn btn-primary" href="<?php echo esc_url(home_url('/capabilities')); ?>">Explore Services</a>
+          <a class="btn btn-secondary" href="<?php echo esc_url(home_url('/contract-vehicles')); ?>">Contract Vehicles</a>
         </div>
       </div>
       <aside class="hero-card">
@@ -42,7 +28,7 @@
       <div class="trust-title">Company Certifications & Contract Vehicles</div>
       <div class="pill-list">
         <span class="pill">HUBZone</span><span class="pill">WOSB</span><span class="pill-sep">|</span>
-        {{ range $vehicles }}<span class="pill">{{ . }}</span>{{ end }}
+        <?php foreach (gcs_default_vehicles() as $vehicle) : ?><span class="pill"><?php echo esc_html($vehicle); ?></span><?php endforeach; ?>
       </div>
     </div>
   </section>
@@ -54,13 +40,13 @@
         <p>GCS combines disciplined delivery, technical depth, and federal mission understanding to support secure, reliable operations.</p>
       </div>
       <div class="cards">
-        {{ range $capabilities }}
+        <?php foreach (gcs_default_capabilities() as $cap) : ?>
           <article class="card">
             <div class="icon">◆</div>
-            <h3>{{ .title }}</h3>
-            <p>{{ .text }}</p>
+            <h3><?php echo esc_html($cap['title']); ?></h3>
+            <p><?php echo esc_html($cap['text']); ?></p>
           </article>
-        {{ end }}
+        <?php endforeach; ?>
       </div>
     </div>
   </section>
@@ -87,9 +73,9 @@
         <p>Accessible acquisition paths for federal IT, engineering, and professional services requirements.</p>
       </div>
       <div class="vehicle-grid">
-        {{ range $vehicles }}<div class="vehicle">{{ . }}</div>{{ end }}
+        <?php foreach (gcs_default_vehicles() as $vehicle) : ?><div class="vehicle"><?php echo esc_html($vehicle); ?></div><?php endforeach; ?>
       </div>
     </div>
   </section>
 </main>
-{{ end }}
+<?php get_footer(); ?>

@@ -2,7 +2,7 @@
 
 # Add custom assets relative to /static or via https
 logo_on_white: "/gcs_logo/logo.png"
-logo_on_black: "/gcs_logo/logo-light.png"
+logo_on_black: "/gcs_logo/logo.png"
 custom_js: []
 custom_css: []
 
