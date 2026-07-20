@@ -13,9 +13,9 @@ en:
       help_url: "/example-page/"
     ### calls to action ###
     main_cta:
-      text: "Join"
+      text: "Contact Us"
       link: "/careers/"
     footer_cta:
-      text: "Join us"
+      text: "Contact Us"
       link: "/careers/"
     github_edit: "Edit this page on GitHub"

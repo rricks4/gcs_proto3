@@ -4,7 +4,17 @@
   "headline" "Mission-Critical IT Services for Government"
   "subheadline" "GCS delivers secure IT, cybersecurity, software engineering, cloud, and mission support services to defense and civilian agencies across the federal government."
 }}
-{{ $vehicles := slice "OASIS+" "GSA MAS" "SeaPort NxG" "SEWP VI" "MDA SHIELD" }}
+{{ $certifications := slice 
+  (dict "img" "logos/hubzone.png")
+  (dict "img" "logos/lowres-wosb-cert.png")
+  (dict "img" "logos/lowres-oasis.png")
+}}
+{{ $vehicles := slice
+  (dict "img" "logos/gsa-mas.png")
+  (dict "img" "logos/seaportnxg.png")
+  (dict "img" "logos/lowres-sewpvi.png")
+  (dict "img" "logos/lowres-mda-shield.png")
+}}
 {{ $capabilities := slice
   (dict "title" "Cybersecurity" "text" "CMMC, RMF, compliance, vulnerability management, and secure operations.")
   (dict "title" "Cloud & Infrastructure" "text" "Enterprise systems administration, cloud, hybrid infrastructure, and service operations.")
@@ -25,7 +35,7 @@
           <button class="btn btn-secondary" type="button">Contract Vehicles</button>
         </div>
       </div>
-      <aside class="hero-card">
+      <!-- <aside class="hero-card">
         <h3>Federal Delivery Snapshot</h3>
         <div class="metric-grid">
           <div class="metric"><strong>100+</strong><span>Employees</span></div>
@@ -33,16 +43,39 @@
           <div class="metric"><strong>CMMC Level 2</strong><span>Certified</span></div>
           <div class="metric"><strong>ISO 9001:2015</strong><span>Certified</span></div>
         </div>
-      </aside>
+      </aside> -->
     </div>
   </section>
 
   <section class="trust-bar">
     <div class="container trust-wrap">
-      <div class="trust-title">Company Certifications & Contract Vehicles</div>
-      <div class="pill-list">
-        <span class="pill">HUBZone</span><span class="pill">WOSB</span><span class="pill-sep">|</span>
-        {{ range $vehicles }}<span class="pill">{{ . }}</span>{{ end }}
+      <div class="trust-group trust-certifications">
+        <div class="trust-heading">
+          <span aria-hidden="true"></span>
+          <h2>Company Certifications</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="trust-logo-list trust-certification-list">
+          {{ range $certifications }}
+            <div class="trust-logo" title="{{ . }}">
+              <img src="{{ .img }}" alt="{{ . }} logo placeholder">
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="trust-group trust-vehicles">
+        <div class="trust-heading">
+          <span aria-hidden="true"></span>
+          <h2>Contract Vehicles</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="trust-logo-list trust-vehicle-list">
+          {{ range $vehicles }}
+            <div class="trust-logo" title="{{ . }}">
+              <img src="{{ .img }}" alt="{{ . }} logo placeholder">
+            </div>
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>
@@ -51,7 +84,6 @@
     <div class="container">
       <div class="section-head">
         <h2>Capabilities Built for Federal Missions</h2>
-        <p>GCS combines disciplined delivery, technical depth, and federal mission understanding to support secure, reliable operations.</p>
       </div>
       <div class="cards">
         {{ range $capabilities }}
@@ -80,7 +112,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container">
       <div class="section-head">
         <h2>Contract Vehicles</h2>
@@ -90,6 +122,15 @@
         {{ range $vehicles }}<div class="vehicle">{{ . }}</div>{{ end }}
       </div>
     </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+
+      {{ .Content }}
+
+    </div>
   </section>
+
 </main>
 {{ end }}
