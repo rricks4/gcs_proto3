@@ -4,10 +4,13 @@
   {{- range $paginator.Pages }}
       {{ $thumbnail := .Params.image | default "gcs_logo/logo.png" | relURL }}
       <article class="blog-item">
-        <img src="{{ $thumbnail }}" alt="{{ .Title | plainify | safeHTMLAttr }} thumbnail"/>
+        <span class="horizontal-line" aria-hidden="true"></span>
+        <div class="background-img">
+          <img class="blog-image" src="{{ $thumbnail }}" alt="{{ .Title | plainify | safeHTMLAttr }} thumbnail"/>
+        </div>
         <h2 class="blog-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{- partial "blog/byline.html" . }}
-        <p class="blog-item__summary">{{ .Summary | plainify }}</p>
+        <p class="blog-item__summary">{{ .Summary | plainify | strings.Truncate 300 "..." }}</p>
       </article>
   {{ end }}
   {{ template "_internal/pagination.html" . }}

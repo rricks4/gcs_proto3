@@ -12,16 +12,16 @@
 {{ $vehicles := slice
   (dict "img" "logos/gsa-mas.png")
   (dict "img" "logos/seaportnxg.png")
-  (dict "img" "logos/lowres-sewpvi.png")
+  (dict "img" "logos/sewpvi.png")
   (dict "img" "logos/lowres-mda-shield.png")
 }}
 {{ $capabilities := slice
-  (dict "title" "Cybersecurity" "text" "CMMC, RMF, compliance, vulnerability management, and secure operations.")
-  (dict "title" "Cloud & Infrastructure" "text" "Enterprise systems administration, cloud, hybrid infrastructure, and service operations.")
-  (dict "title" "Software & Data" "text" "Application support, databases, automation, Power Platform, and data-driven solutions.")
-  (dict "title" "Program Management" "text" "Disciplined program execution, governance, quality, staffing, and reporting.")
-  (dict "title" "Mission Support" "text" "Administrative, operational, logistics, and professional services supporting federal missions.")
-  (dict "title" "Engineering Services" "text" "Technical engineering, lifecycle support, documentation, analysis, and modernization.")
+  (dict "img" "svg/capabilities_graphic_1.svg" "title" "Cybersecurity" "text" "CMMC, RMF, compliance, vulnerability management, and secure operations.")
+  (dict "img" "svg/capabilities_graphic_2.svg" "title" "Cloud & Infrastructure" "text" "Enterprise systems administration, cloud, hybrid infrastructure, and service operations.")
+  (dict "img" "svg/capabilities_graphic_3.svg" "title" "Software & Data" "text" "Application support, databases, automation, Power Platform, and data-driven solutions.")
+  (dict "img" "svg/capabilities_graphic_4.svg" "title" "Program Management" "text" "Disciplined program execution, governance, quality, staffing, and reporting.")
+  (dict "img" "svg/capabilities_graphic_5.svg" "title" "Mission Support" "text" "Administrative, operational, logistics, and professional services supporting federal missions.")
+  (dict "img" "svg/capabilities_graphic_6.svg" "title" "Engineering Services" "text" "Technical engineering, lifecycle support, documentation, analysis, and modernization.")
 }}
 <main>
   <section class="hero">
@@ -35,6 +35,8 @@
           <button class="btn btn-secondary" type="button">Contract Vehicles</button>
         </div>
       </div>
+
+      <!-- cool infographic bubble atop the hero background -->
       <!-- <aside class="hero-card">
         <h3>Federal Delivery Snapshot</h3>
         <div class="metric-grid">
@@ -44,6 +46,7 @@
           <div class="metric"><strong>ISO 9001:2015</strong><span>Certified</span></div>
         </div>
       </aside> -->
+
     </div>
   </section>
 
@@ -57,8 +60,8 @@
         </div>
         <div class="trust-logo-list trust-certification-list">
           {{ range $certifications }}
-            <div class="trust-logo" title="{{ . }}">
-              <img src="{{ .img }}" alt="{{ . }} logo placeholder">
+            <div class="trust-logo" title="{{ .img }}">
+              <img src="{{ .img | relURL }}" alt="">
             </div>
           {{ end }}
         </div>
@@ -71,8 +74,8 @@
         </div>
         <div class="trust-logo-list trust-vehicle-list">
           {{ range $vehicles }}
-            <div class="trust-logo" title="{{ . }}">
-              <img src="{{ .img }}" alt="{{ . }} logo placeholder">
+            <div class="trust-logo" title="{{ .img }}">
+              <img src="{{ .img | relURL }}" alt="">
             </div>
           {{ end }}
         </div>
@@ -88,7 +91,9 @@
       <div class="cards">
         {{ range $capabilities }}
           <article class="card">
-            <div class="icon">◆</div>
+            <div class="icon">
+              <img src="{{ .img | relURL }}" alt="" aria-hidden="true">
+            </div>
             <h3>{{ .title }}</h3>
             <p>{{ .text }}</p>
           </article>

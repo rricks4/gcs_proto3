@@ -11,31 +11,24 @@
 # ordered by weight from lowest to highest.
 
 main:
-  - name: "Home"
-    url: "/"
-    weight: 5
+  # - name: "Home"
+  #   url: "/"
+  #   weight: 5
 
   - name: "About"
     identifier: "about"
-    weight: 10    
-
-  - name: "Who We Are"
     pageRef: "about"
-    weight: 12
-    parent: "about"
-
-  - name: "Awards"
-    pageRef: "awards"
-    weight: 15
-    parent: "about"
+    weight: 10
 
   - name: "News"
     pageRef: "news"
     weight: 20
 
-  - name: "Capabilities"
-    pageRef: "capabilities"
+  - name: "Why GCS"
+    identifier: "why"
     weight: 30
+
+  
 
   - name: "Contract Vehicles"
     pageRef: "contract-vehicles"

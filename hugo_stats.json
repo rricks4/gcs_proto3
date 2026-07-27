@@ -35,6 +35,8 @@
       "ul"
     ],
     "classes": [
+      "background-img",
+      "blog-image",
       "blog-item",
       "blog-item__byline",
       "blog-item__date",
@@ -72,6 +74,7 @@
       "header",
       "hero",
       "hero-inner",
+      "horizontal-line",
       "icon",
       "image-panel",
       "light",
@@ -118,8 +121,6 @@
       "trust-vehicle-list",
       "trust-vehicles",
       "trust-wrap",
-      "vehicle",
-      "vehicle-grid",
       "wrap"
     ],
     "ids": [
