@@ -28,7 +28,15 @@ main:
     identifier: "why"
     weight: 30
 
-  
+  # - name: "Capabilities"
+  #   pageRef: "capabilities"
+  #   weight: 31
+  #   parent: "why"
+
+  # - name: "Awards"
+  #   pageRef: "awards"
+  #   weight: 32
+  #   parent: "why"
 
   - name: "Contract Vehicles"
     pageRef: "contract-vehicles"

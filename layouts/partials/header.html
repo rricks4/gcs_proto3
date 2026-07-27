@@ -2,15 +2,20 @@
 {{ with .Site.Params.sticky_header }}
   {{ $extra_header_class = "sticky" }}
 {{ end }}
+{{ $homeURL := "" | relLangURL }}
 <header class="header {{ $extra_header_class }}">
     <div class="container wrap">
 
         {{ with .Site.Params.logo_on_white }}
-        <a class="logo-link" href="{{ "/" | absLangURL }}">
-            <img class="logo" width="150" height="40" src="{{ . | absURL }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+        {{ $logoSrc := . }}
+        {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
+            {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
+        {{ end }}
+        <a class="logo-link" href="{{ $homeURL }}">
+            <img class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
         </a>
         {{ else }}
-        <a class="site-title-link" href="{{ "/" | absLangURL }}">
+        <a class="site-title-link" href="{{ $homeURL }}">
             <span class="site-title">{{ $.Site.Title }}</span>
         </a>
         {{ end }}
