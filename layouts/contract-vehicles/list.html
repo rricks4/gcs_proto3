@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ .Content }}
+  <div class="cards columns-3">
+    {{ range .Pages }}
+      {{ $thumbnail := .Params.image | default "gcs_logo/logo.png" | relURL }}
+      <a class="card" href="{{ .Permalink }}">
+        <div class="card-img-container">
+          <img  src="{{ $thumbnail }}" alt="{{ .Title | plainify | safeHTMLAttr }} logo"/>
+        </div>
+        <br>
+        <br>
+        <h2>
+            {{ .Title }}
+        </h2>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}
