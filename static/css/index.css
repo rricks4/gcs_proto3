@@ -26,7 +26,7 @@
 
 body{
   margin:0;
-  font-family:Inter,Arial,Helvetica,sans-serif;
+  font-family:var(--header-navigation-font-family);
   color:var(--ink);
   background:#fff;
   line-height:1.55;
@@ -45,6 +45,29 @@ img{
 .container{
   width:min(var(--max),calc(100% - 40px));
   margin:0 auto;
+}
+
+body.page-home .header > .container{
+  width:100%;
+  max-width:100%;
+  margin:auto;
+}
+
+body.page-home .header .main-menu-cta{
+  font-family:var(--header-navigation-font-family);
+  font-size:16px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.7px;
+}
+
+body.page-home .header .main-menu__wrapper a{
+  font-family:var(--header-navigation-font-family);
+  font-size:16px;
+  font-style:normal;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.8px;
 }
 
 .site-header{
@@ -676,8 +699,12 @@ body.page-home #content>.content>main{width:100%;max-width:none}
 body.page-home main .container{width:min(var(--max),calc(100% - 40px));max-width:var(--max);margin-left:auto;margin-right:auto}
 body.page-home button.btn{font:inherit;cursor:pointer}
 body.page-home button.btn:focus-visible{outline:3px solid rgba(255,255,255,.78);outline-offset:3px}
-body.page-home .hero h1,body.page-home .section-head h2,body.page-home .content h2,body.page-home .card h3,body.page-home .hero-card h3{font-family:Inter,Arial,Helvetica,sans-serif}
+body.page-home .hero h1,body.page-home .section-head h2,body.page-home .content h2,body.page-home .card h3,body.page-home .hero-card h3{font-family:var(--header-navigation-font-family)}
 body.page-home .hero h1{color:#fff;font-weight:900}
-body.page-home .button-row button{font-family:Inter,Arial,Helvetica,sans-serif}
-@media(min-width:1000px){body.page-home .main-menu .top-menu-item{margin-right:clamp(20px,4vw,48px)}}
+body.page-home .button-row button{font-family:var(--header-navigation-font-family)}
+@media(min-width:1000px){body.page-home .main-menu .top-menu-item{margin-right:20px}}
+@media(min-width:1250px){
+  body.page-home .header > .container{max-width:var(--container-width)}
+  body.page-home .main-menu .top-menu-item{margin-right:60px}
+}
 @media(max-width:520px){body.page-home main .container{width:min(100% - 26px,var(--max))}}

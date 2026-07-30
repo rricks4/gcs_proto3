@@ -5,10 +5,6 @@ date: "2026-05-12T13:14:47-05:00"
 showHeader: false
 ---
 
-((PLACEHOLDER TEXT TESTING CUSTOM CONTENT TEXT IMPLEMENTATION))
-
-woaw
-
 Global Commerce & Services, LLC (GCS) is an Information Technology company founded in 2000. The company has provided services in the areas of IT Solutions and Systems Engineering, Cybersecurity, Local Area Network/Wide Area Network (LAN/WAN) Development and Support, and Program/Project Management.
 
 Our clients include Department of Agriculture, Department of Navy, U. S. Airforce, U. S. Coast Guard, Department of Army, U.S. Peace Corps, Defense Information Systems Agency (DISA), and The National Aeronautics and Space Administration (NASA).

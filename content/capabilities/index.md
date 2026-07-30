@@ -5,16 +5,25 @@ title = 'Capabilities'
 
 GCS provides a comprehensive range of information technology, professional, and administrative services to support government agency missions. Our capabilities are delivered individually or in combination to meet program-specific requirements.
 
-# Information Technology Services
-GCS delivers secure, scalable IT solutions that modernize federal systems, strengthen cybersecurity, and support mission-critical operations.
+{{< cards >}}
+
+{{< card >}}
+## Information Technology Services
+
 •	Systems engineering, integration, and modernization
+
 •	Software development, DevSecOps, and application sustainment
+
 •	Cloud computing, migration, and infrastructure services
+
 •	Network engineering and enterprise communications support
+
 •	Data management, analytics, and information systems support
 
-# Cybersecurity Services
-GCS provides mission-focused cybersecurity services that strengthen enterprise security, improve resilience, and support compliance across federal environments. We help agencies protect critical infrastructure, modernize security operations, and address evolving cyber threats through proactive, risk-based approaches.
+{{< /card >}}
+
+{{< card >}}
+## Cybersecurity Services
 
 •	Cybersecurity governance, risk, and compliance (GRC)
 
@@ -35,9 +44,10 @@ GCS provides mission-focused cybersecurity services that strengthen enterprise s
 •	Security policy development and compliance support
 
 •	Information assurance and data protection services
+{{< /card >}}
 
-# Program & Project Management
-GCS provides disciplined program and project management support that helps federal agencies improve execution, visibility, and mission performance.
+{{< card >}}
+## Program & Project Management
 
 •	Program, project, and portfolio management office (PMO) support
 
@@ -48,9 +58,10 @@ GCS provides disciplined program and project management support that helps feder
 •	Agile, hybrid, and iterative delivery support
 
 •	Strategic planning, reporting, and stakeholder coordination
+{{< /card >}}
 
-# Mission Support & Advisory Services
-GCS delivers professional services that enhance organizational effectiveness, governance, and operational performance across federal programs.
+{{< card >}}
+## Mission Support & Advisory Services
 
 •	Strategic planning and organizational transformation
 
@@ -61,9 +72,10 @@ GCS delivers professional services that enhance organizational effectiveness, go
 •	Performance management and data-driven decision support
 
 •	Policy development and program governance support
+{{< /card >}}
 
-# Administrative & Operational Support
-GCS provides administrative and operational support services that enable efficient program execution and day-to-day mission operations.
+{{< card >}}
+## Administrative & Operational Support
 
 •	Administrative and clerical support services
 
@@ -74,6 +86,11 @@ GCS provides administrative and operational support services that enable efficie
 •	Documentation and reporting support
 
 •	Workforce augmentation and mission support services
+{{< /card >}}
+
+{{< /cards >}}
+
+
 
 # Federal Experience
 Since 2000, GCS has supported DoD and civilian agencies across technical, professional, and administrative domains. Our teams are experienced in working within federal operational environments and adapting services to meet mission demands.

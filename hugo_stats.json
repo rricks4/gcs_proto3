@@ -37,7 +37,6 @@
     "classes": [
       "background-img",
       "blog-image",
-      "blog-item",
       "blog-item__byline",
       "blog-item__date",
       "blog-item__summary",
@@ -57,8 +56,11 @@
       "check",
       "checklist",
       "column",
+      "columns",
+      "columns-1",
       "columns-2",
       "columns-3",
+      "columns-4",
       "container",
       "content",
       "contract-vehicles",
@@ -77,7 +79,6 @@
       "header",
       "hero",
       "hero-inner",
-      "horizontal-line",
       "icon",
       "image-panel",
       "light",
@@ -106,6 +107,7 @@
       "section-head",
       "skip-link",
       "social-links",
+      "spacer-50",
       "split",
       "sticky",
       "sub-menu",
@@ -132,13 +134,19 @@
       "business-information",
       "content",
       "cybersecurity-services",
+      "david-harmon",
+      "director-of-human-resources",
       "federal-experience",
       "information-technology-services",
+      "joaneane-a-smith",
+      "lisa-johnson-phd",
       "mission-support--advisory-services",
       "our-leadership",
+      "president-and-ceo",
       "primary-naics-codes",
       "program--project-management",
-      "quality-security-and-delivery-standards"
+      "quality-security-and-delivery-standards",
+      "sr-program-manager"
     ]
   }
 }

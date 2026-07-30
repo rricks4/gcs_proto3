@@ -43,6 +43,6 @@ main:
     pageRef: "contract-vehicles"
     weight: 40
 
-  - name: "Careers"
-    pageRef: "careers"
-    weight: 50
+  # - name: "Careers"
+  #   pageRef: "careers"
+  #   weight: 50

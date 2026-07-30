@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ .Content }}
+  <hr>
   {{ $paginator := .Paginate .Pages }}
   <div class="cards columns-1">
     {{- range $paginator.Pages }}

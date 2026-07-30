@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
-  <span class="horizontal-line" aria-hidden="true"></span>
-  <div class="cards columns-3">
+  <hr>
+  <div class="cards columns-4">
     {{ range .Pages }}
       {{ $thumbnail := .Params.image | default "gcs_logo/logo.png" | relURL }}
       {{ $description := .Params.desc }}
