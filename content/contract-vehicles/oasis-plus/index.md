@@ -2,6 +2,7 @@
 title: "GSA OASIS+"
 date: 2025-12-18T05:47:26-05:00
 image: "logos/Tactis-Blog-Banner-Oasis-Plus-387676425.png"
+desc: "One Acquisition Solution for Integrated Services Plus"
 weight: 100
 author: ""
 ---

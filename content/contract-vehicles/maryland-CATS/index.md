@@ -1,7 +1,8 @@
 ---
-title: "Maryland Consulting and Technical Services Plus"
+title: "Maryland CATS+"
 date: 2025-12-18T05:47:26-05:00
 image: "logos/content_10020201207152648-3606266224.png"
+desc: "Consulting and Technical Services Plus"
 weight: 100
 author: ""
 ---

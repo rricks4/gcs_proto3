@@ -50,14 +50,6 @@
         margin-block-end: 0;
     }
 
-    .horizontal-line {
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: var(--primary-600);
-        margin-block-end: 24px;
-    }
-
 }
 
 .blog-image {
@@ -75,7 +67,6 @@
     overflow: hidden;
     border-radius: 20px;
     margin-block-end: 24px;
-    
 }
 
 // Singular blog page.

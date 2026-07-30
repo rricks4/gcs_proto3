@@ -1,7 +1,8 @@
 ---
-title: "GSA Multiple Award Schedule (MAS)"
+title: "GSA MAS"
 date: 2025-12-18T05:47:26-05:00
 image: "logos/gsa-mas.png"
+desc: "Multiple Award Schedule"
 weight: 100
 author: ""
 ---

@@ -9,6 +9,12 @@
     margin-bottom: 40px;
 }
 
+.columns-1 {
+    > * {
+        grid-column: span 12;
+    }
+}
+
 .columns-2 {
     > * {
         grid-column: span 12;

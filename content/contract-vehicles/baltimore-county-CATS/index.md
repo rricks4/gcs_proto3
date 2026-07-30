@@ -1,7 +1,8 @@
 ---
-title: "Baltimore County Information Technology Consulting and Technical Services"
+title: "Baltimore County CATS"
 date: 2025-12-18T05:47:26-05:00
 image: "logos/baltimore-county-banner.png"
+desc: "Information Technology Consulting and Technical Services"
 weight: 100
 author: ""
 ---

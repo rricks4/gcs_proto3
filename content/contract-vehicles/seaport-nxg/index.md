@@ -1,7 +1,8 @@
 ---
-title: "Seaport Next Generation (NxG)"
+title: "Seaport NxG"
 date: 2025-12-18T05:47:26-05:00
 image: "logos/seaport_next_gen-3722944158.png"
+desc: "Seaport Next Generation"
 weight: 100
 author: ""
 ---
