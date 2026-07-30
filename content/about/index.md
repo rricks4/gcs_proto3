@@ -12,7 +12,7 @@ GCS has experience in Information Technology, including both management and tech
 {{< /column >}}
 
 {{< column >}}
-{{< img src="/img/ffc0d3c4f5c4240f4752c57ca36f49fc.jpg" loading="eager" >}}
+{{< img src="../img/ffc0d3c4f5c4240f4752c57ca36f49fc.jpg" loading="eager" >}}
 {{< /column >}}
 
 {{< /columns >}}
@@ -26,7 +26,7 @@ GCS is led by an experienced management team with deep federal contracting, IT, 
 {{< columns count=3 >}}
 
 {{< column >}}
-{{< img src="/img/1699324406749.jpg" loading="eager" >}}
+{{< img src="../img/1699324406749.jpg" loading="eager" >}}
 
 ## Joaneane A. Smith
 ### President and CEO
@@ -35,7 +35,7 @@ GCS is led by an experienced management team with deep federal contracting, IT, 
 {{< /column >}}
 
 {{< column >}}
-{{< img src="/img/1715616708555.jpg" loading="eager" >}}
+{{< img src="../img/1715616708555.jpg" loading="eager" >}}
 
 ## Lisa Johnson, PhD
 ### Director of Human Resources
@@ -44,7 +44,7 @@ GCS is led by an experienced management team with deep federal contracting, IT, 
 {{< /column >}}
 
 {{< column >}}
-{{< img src="/img/1516304360473.jpg" loading="eager" >}}
+{{< img src="../img/1516304360473.jpg" loading="eager" >}}
 
 ## David Harmon
 ### Senior Program Manager
