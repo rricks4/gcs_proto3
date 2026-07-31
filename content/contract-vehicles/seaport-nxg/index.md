@@ -7,9 +7,9 @@ weight: 100
 author: ""
 ---
 
-GCS will exceed your company's expectations with our exceptional Seaport NxG services.
+Seaport NxG is the Navy’s electronic platform for acquiring support services in 22 functional areas including Engineering, Financial Management, and Program Management. The Navy Systems Commands (NAVSEA, NAVAIR, SPAWAR, NAVFAC, and NAVSUP), the Office of Naval Research, the United States Marine Corp, and the Defense Threat Reduction Agency (DTRA) compete their service requirements amongst 1800+ Seaport NxG IDIQ multiple award contract holders. The Seaport NxG portal provides a standardized, efficient means of soliciting offers from amongst the diverse population of large and small businesses and their approved team members. All task orders are competitively solicited, awarded and managed using the Seaport NxG platform. Since nearly 85% of its contract–holders are small businesses, the Seaport NxG approach to acquiring services provides opportunity that fuels the nation’s engine of job growth.
 
-GCS provides federal agencies with streamlined access to our IT, management, advisory, and professional services through multiple contract vehicles. 
+For more information on SeaPort NxG , visit: http://www.seaport.navy.mil/
 
 Contract Number: N0017819D7709
 Contract Term: 1/2/2024 - 1/1/2029  
