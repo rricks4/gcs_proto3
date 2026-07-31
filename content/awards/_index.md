@@ -8,6 +8,34 @@ Global Commerce & Services, LLC has been recognized and awarded for our ability 
 
 We pride ourselves on our ability to deliver projects successfully, with no schedule delays, cost overruns, or late deliverables.  Our company is accountable and dependable, with an experienced management team that keeps us up-to-date with industry knowledge.
 
+___
+
+## Certifications
+
+{{< cards count=2 >}}
+
+{{< card >}}
+### Small Business Administration Hubzone
+{{< figure
+  src="../logos/417d399088d91b6a22347098b9876444.jpg"
+  alt="Hubzone Logo"
+>}}
+{{< /card >}}
+
+{{< card >}}
+### Economically Disadvantaged Women-Owned Small Businesses (EDWOSB)
+{{< figure
+  src="../logos/725dade2d049c2a61e5739e5ffc49e14.jpg"
+  alt="EDWOSB Logo"
+>}}
+{{< /card >}}
+
+{{< /cards >}}
+
+___
+
+## Awards List
+
 {{< columns count=2 >}}
 
 {{< column >}}

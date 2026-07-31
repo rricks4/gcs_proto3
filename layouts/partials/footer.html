@@ -57,21 +57,28 @@
         </div>
 
         <div class="footer__logo-social-wrapper">
-            {{ with .Site.Params.logo_on_black }}
-            {{ $logoSrc := . }}
-            {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
-                {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
-            {{ end }}
-            <a class="logo-link" href="{{ $homeURL }}">
-                <img loading="lazy" class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}"></a>
-            {{ end }}
 
+            {{ with .Site.Params.logo_on_black }}
+                {{ $logoSrc := . }}
+                {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
+                    {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
+                {{ end }}
+                <a class="logo-link" href="{{ $homeURL }}">
+                    <img loading="lazy" class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+                </a>
+            {{ end }}
+            
+                
             {{- partial "footer/social-links.html" . -}}
         </div>
 
         <hr class="footer-hr">
 
-        <div class="copyright">
+        <p>{{ .Site.Copyright | default "Copyright &copy; {{< current_year >}} All Rights Reserved. [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo by [CNCF](https://www.cncf.io)." | markdownify }}</p>
+
+        <p>The appearance of U.S. Department of Defense (DOD) Visual Information does not imply or constitute DOD endorsement.</p>
+
+        <!-- <div class="copyright">
             <p>{{ .Site.Copyright | default "Copyright &copy; {{< current_year >}} All Rights Reserved. [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo by [CNCF](https://www.cncf.io)." | markdownify }}</p>
 
             <div class="copyright__accessibility-git-wrapper">
@@ -82,7 +89,7 @@
 
                 {{- partial "footer/github.html" . -}}
             </div>
-        </div>
+        </div> -->
     </div>
 </footer>
 
@@ -96,7 +103,7 @@
 <script defer src="{{ $js.Permalink }}"></script>
 <script>
     var stickyHeader = {{ if .Site.Params.sticky_header }}true{{ else }}false{{ end }};
-  </script>
+</script>
 {{ end }}
 
 {{/* Theme: Scripts */}}

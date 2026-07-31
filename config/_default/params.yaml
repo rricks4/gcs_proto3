@@ -18,12 +18,12 @@ github:
 social_links:
   devstats: ""
   discord: ""
-  facebook: ""
+  facebook: "https://www.facebook.com/pages/Global-Commerce-and-Services-LLC/146101898738025"
   flickr: ""
-  github: "https://github.com/cncf/dot-org-hugo-theme"
+  github: "https://github.com/rricks4/gcs_proto3"
   instagram: ""
   landscape: ""
-  linkedin: "https://www.linkedin.com/company/cloud-native-computing-foundation"
+  linkedin: "https://www.linkedin.com/company/global-commerce-and-services-llc"
   mastodon: ""
   pinterest: ""
   rss: ""
@@ -31,7 +31,7 @@ social_links:
   stackoverflow: ""
   threads: ""
   twitter: ""
-  x: ""
+  x: "https://x.com/globalcommserv"
   youtube: ""
 
 # Makes the header sticky on tall screens

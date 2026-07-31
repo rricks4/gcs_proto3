@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
   <hr>
-  <div class="cards columns-4">
+  <div class="cards columns-3">
     {{ range .Pages }}
       {{ $thumbnail := .Params.image | default "gcs_logo/logo.png" | relURL }}
       {{ $description := .Params.desc }}
@@ -9,7 +9,7 @@
         <div class="card-img-container">
           <img  src="{{ $thumbnail }}" alt="{{ .Title | plainify | strings.Truncate 25  "..." }} logo"/>
         </div>
-        <br>
+        <hr>
         <h2>
             {{ .Title }}
         </h2>
