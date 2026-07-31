@@ -1,0 +1,48 @@
+@use "variables";
+
+.hero{
+  background:radial-gradient(circle at 80% 18%,rgba(23,162,184,.22),transparent 30%),
+  linear-gradient(135deg,var(--navy),var(--navy2) 58%,#073b63);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(7,31,58,.92),rgba(7,31,58,.66),rgba(7,31,58,.2)),
+  url('../img/231010-M-GV479-1127Y.JPG');
+  background-size:cover;
+  background-position:center right;
+  opacity:.96;
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+  min-height:400px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  align-items:center;
+  gap:48px;
+  padding:78px 0;
+}
+
+.hero h1{
+  font-size:clamp(42px,5vw,72px);
+  line-height:1.02;
+  margin:18px 0 18px;
+  letter-spacing:-.045em;
+  max-width:780px;
+  color:#ffffff;
+  font-weight:900
+}
+
+.hero p{
+  font-size:20px;
+  max-width:670px;
+  color:#e8f1f8;
+  margin:0 0 32px;
+}

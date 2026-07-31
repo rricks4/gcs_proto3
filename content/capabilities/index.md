@@ -3,10 +3,12 @@ date = '2026-05-18T06:08:09-05:00'
 title = 'Capabilities'
 +++
 
-GCS provides a comprehensive range of information technology, professional, and administrative services to support government agency missions. Our capabilities are delivered individually or in combination to meet program-specific requirements.'
+GCS provides a comprehensive range of information technology, professional, and administrative services to support government agency missions. Our capabilities are delivered individually or in combination to meet program-specific requirements.
 
 GCS capabilities statement:
 https://nebula.wsimg.com/bed744d41cf5f119f59e6b3a3feeb8bf?AccessKeyId=95852820E135E4D95725&disposition=0&alloworigin=1
+
+___
 
 {{< cards >}}
 
