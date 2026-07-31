@@ -14,8 +14,8 @@ en:
     ### calls to action ###
     main_cta:
       text: "Contact Us"
-      link: "/contact-us/"
+      link: "contact-us"
     footer_cta:
       text: "Contact Us"
-      link: "/contact-us/"
+      link: "contact-us"
     github_edit: "Edit this page on GitHub"
