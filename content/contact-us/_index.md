@@ -1,22 +1,10 @@
 +++
 date = '2026-07-30T18:49:30-05:00'
-draft = true
+draft = false
 title = 'Contact Us'
 +++
 
 Thank you for your interest in our services and solutions. Please let us know about your upcoming projects and teaming opportunities. We welcome the opportunity to become a part of your team.
-
-___
-
-## Points of Contact
-
-New Orleans Headquarters Phone: +1-504-308-1308      
-
-St. Louis Office Phone: +1-314-930-4449
-
-New Orleans Headquarters Fax: +1-504-308-1309
-
-Email: info@globalcommserv.com
 
 ___
 
@@ -74,3 +62,14 @@ Global Commerce and Services LLC, ​1103 Balch Blvd, Suite 146H, ​Stennis Spa
 
 {{< /Columns >}}
 
+___
+
+## Points of Contact
+
+New Orleans Headquarters Phone: +1-504-308-1308      
+
+St. Louis Office Phone: +1-314-930-4449
+
+New Orleans Headquarters Fax: +1-504-308-1309
+
+Email: info@globalcommserv.com
