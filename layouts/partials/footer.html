@@ -58,14 +58,26 @@
 
         <div class="footer__logo-social-wrapper">
 
-            {{ with .Site.Params.logo_on_black }}
-                {{ $logoSrc := . }}
-                {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
-                    {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
+            {{ if .IsHome }}
+                {{ with .Site.Params.logo_on_white }}
+                    {{ $logoSrc := . }}
+                    {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
+                        {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
+                    {{ end }}
+                    <a class="logo-link" href="{{ $homeURL }}">
+                        <img loading="lazy" class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+                    </a>
                 {{ end }}
-                <a class="logo-link" href="{{ $homeURL }}">
-                    <img loading="lazy" class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
-                </a>
+            {{ else }}
+                {{ with .Site.Params.logo_on_black }}
+                    {{ $logoSrc := . }}
+                    {{ if not (or (strings.HasPrefix $logoSrc "http://") (strings.HasPrefix $logoSrc "https://")) }}
+                        {{ $logoSrc = $logoSrc | strings.TrimPrefix "/" | relURL }}
+                    {{ end }}
+                    <a class="logo-link" href="{{ $homeURL }}">
+                        <img loading="lazy" class="logo" width="150" height="40" src="{{ $logoSrc }}" alt="{{ $.Site.Title | safeHTMLAttr }}">
+                    </a>
+                {{ end }}
             {{ end }}
             
                 

@@ -1,5 +1,5 @@
 /* 
-  Stylesheet sued for the website homepage;
+  Stylesheet used for the website homepage;
   Homepage code at /layouts/index.html
   Homepage content at /content/_index.md
 */
@@ -598,7 +598,7 @@ body.page-home .header .main-menu__wrapper a{
   .section-head{
     display:block;
   }
-  
+
   .header-inner{
     height:76px;
   }
